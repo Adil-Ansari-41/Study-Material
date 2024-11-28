@@ -1,0 +1,35 @@
+ul{
+    background-color:pink;
+    display:flex;
+    /* justify-content:center; */
+    justify-content:space-evenly;
+
+}
+
+a{
+    text-decoration:none;
+    color:red;
+}
+
+li{
+    list-style-type:none;
+    /* background-color:aqua; */
+    /* display:inline-block; */
+}
+
+#box1{
+    background-color:yellow;
+    height:400px;
+    width:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:400px
+
+}
+
+#box2{
+    background-color:red;
+    height:150px;
+    width:200px
+}

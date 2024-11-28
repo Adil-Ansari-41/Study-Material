@@ -1,0 +1,390 @@
+body{ 
+    background-color:black;
+}
+ /* ancestor means parents elements  */
+h1{
+    color:green;text-align:right;background-color:aqua;
+    text-decoration:yellow underline dotted;
+}
+
+button{color:green;background-color:rgb(00,00,255); text-decoration:red wavy overline;}
+
+*{
+    color:red;
+}
+
+h1{color:yellow;text-align:right;background-color:aqua;}
+/* This selector give priority  */
+
+#para1{color:green;background:black;text-align:center;font-style:italic;}
+#para2{color:blueviolet;text-align:right;}
+
+.c1{color:blueviolet;text-align:right;}
+
+a{text-decoration:none;}
+p{
+    font-family:arial,roboto,Verdana, Geneva, Tahoma, sans-serif;
+}
+h6{
+    font-style:italic;font-weight:bold;font-size:50px;
+}
+#div1{
+    color:white;background-color:blue;height:80px;width:300px;
+    border-color:yellow;border-style: double;border-width:10px
+}
+#shorthand{
+    border:10px dashed blue;
+}
+#rsquare{
+    height:80px;width:300px;border-color:yellow;border-style:solid;border-width:7px;
+    border-radius:15px;
+}
+#circle{
+    height:100px;width:100px;border-radius:50%;background-color:yellow;text-align:center;
+}
+#paddingandmargin{
+    height:150px;width:200px;background-color:yellow;
+    padding-left:50px;
+    padding-right:30px;
+    /* padding:2px 3px 4px 5px <clockwise top right bottom left (shorthand)*/
+    margin-left:300px;
+     /* margin:2px 3px 4px 5px <clockwise top right bottom left (shorthand)*/
+}
+
+#displayandrgba{
+   color:white; background-color:rgba(00,00,255,0.5);
+    height:200px;
+    width: 300px;
+    padding-left:60px;
+    padding-right:60px;
+    margin-left:200px;
+    display:inline-block;
+}
+#hide{
+    color:white; background-color:rgba(00,00,255,0.5);
+    height:200px;
+    width: 300px;
+    padding-left:60px;
+    padding-right:60px;
+    margin-left:200px;
+    display:none;
+}
+
+#visibility{
+    background-color:#ff0000;
+    height:200px;
+    width: 300px;
+    visibility:hidden;
+}
+
+#box1{
+    background-color:#ffff00;
+    height:200px;
+    font-size:10px;
+    width:50vw;
+    margin-bottom:15px;
+
+}
+#box2{
+    background-color:#0000ff;
+    width:50%;
+margin-left:10%;
+/* font-size:2em; */
+font-size:2rem;
+height:30vh;
+
+
+}
+
+#position1{
+    height:100px;
+    width:100px;
+    background-color:aqua;
+    border:2px solid white;
+    display:inline-block;
+    position:static;
+    top:50px;
+    bottom:200px;
+    /* No change in static position */
+    /* Is is by deafult position */
+}
+
+#position2{
+    height:100px;
+    width:100px;
+    background-color:aqua;
+    border:2px solid white;
+    display:inline-block;
+    position:relative;
+    top:20px;
+    left:30px;
+    /* bottom:30px;  not effect on page */
+    z-index: 2;
+}
+#position3{
+    height:100px;
+    width:100px;
+    background-color:aqua;
+    border:2px solid white;
+    display:inline-block;
+    position:absolute;
+    top: 2800px;
+    right:300px;
+}
+
+#position4{
+    height:100px;
+    width:100px;
+    background-color:aqua;
+    border:2px solid white;
+    display:inline-block;
+    position:fixed;
+    top:200px;
+    left:100px;
+}
+
+#position5{
+    height:100px;
+    width:100px;
+    background-color:aqua;
+    border:2px solid white;
+    display:inline-block;
+    position:sticky;
+    top:10px;
+    right:300px;
+    z-index: 1;
+
+}
+
+#backimg1{
+    height:200px;
+    width:200px;
+    background-color:aqua;
+    border:2px solid white;
+    display:inline-block;
+   background-image:url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHRtbHxlbnwwfHwwfHx8MA%3D%3D");
+background-size:cover;
+}
+
+#backimg2{
+    height:200px;
+    width:200px;
+    background-color:aqua;
+    border:2px solid white;
+    display:inline-block;
+    background-image:url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHRtbHxlbnwwfHwwfHx8MA%3D%3D");
+background-size:contain;
+/* background-size:auto; */
+   
+}
+/* important topic */
+#container{
+    text-align:center;
+    width:900px;
+    height:600px;
+    border:2px solid yellow;
+    background-color:white;
+    /* margin-left:200px; */
+    display:flex;
+    flex-direction:row; /* no change row is by default left to right*/
+    /* flex-direction:row-reverse; box  right to left ; */
+    /* flex-direction:column; in left side top to bottom ; */
+    /* flex-direction:column-reverse; in left side bottom to top ;*/
+    /* justify-content:start; left to right; */
+    /* justify-content:end;  right to left; */
+    justify-content:center; /*to align center the element horizontally*/
+    /* justify-content:space-around; from boundry space between boxes; */
+    /* justify-content:space-between; space between boxes; */
+    /* justify-content:space-evenly; from boundry space between boxes equaly; */
+    /* flex-wrap:nowrap; no change default value; */
+    /* flex-wrap:wrap; line change if not fix in container to next line; */
+    /* flex-wrap:wrap-reverse; line change if not fix in container to up side line */
+    /* align-items:; */
+    align-items:center to align center the element virtically;
+     /* align-items:stretch; */
+     /* align-content:center; to remove space between elements ; */
+     /* align-content:flex-start; */
+}
+
+#flexbox1{
+    height:100px;
+    width:150px;
+    display:inline-block;
+    border:2px solid black;
+    text-align:center;
+    background-color:aqua;
+    
+}
+
+#flexbox2{
+    height:100px;
+    width:150px;
+    display:inline-block;
+    border:2px solid black;
+    text-align:center;
+    background-color:pink;
+}
+
+#flexbox3{
+    height:100px;
+    width:150px;
+    display:inline-block;
+    border:2px solid black;
+    text-align:center;
+    background-color:gold;
+}
+
+#flexbox4{
+    height:100px;
+    width:150px;
+    display:inline-block;
+    border:2px solid black;
+    text-align:center;
+    background-color:rgba(255,0,0,0.5);
+    
+
+    /* flex-grow:1; to increse size of container two times if space is avilable;*/
+}
+
+#flexbox5{
+    height:100px;
+    width:150px;
+    display:inline-block;
+    border:2px solid black;
+    text-align:center;
+    background-color:#0000ff;
+
+    /* align-self:flex-end; give first priority; */
+
+    /* flex-shrink:2; to decrease size of container two times of another container; */
+    /* flex-shrink:0.5; to decrease size of container half times of another container */
+}
+
+#mediaquery{
+
+    height:200px;
+    width:200px;
+    background-color:yellow;
+}
+
+@media(width:600px){
+    #mediaquery{
+        background-color:red;
+    }
+}
+
+@media (max-width:599px){
+    #mediaquery{
+        background-color:green;
+    }
+}
+
+@media (min-width:800px){
+    #mediaquery{
+        background-color:aqua;
+    }
+}
+
+@media (min-width:650px) and (max-width:750px){
+    #mediaquery{
+        background-color:blue;
+    }
+}
+
+#transitionsandtransform{
+    height:200px;
+    width:200px;
+    background-color:aquamarine;
+    border:2px solid black;
+
+    /* transition-property:all;
+    transition-duration:2s;
+    /* transition-timing-function: ease-in; */
+   /* transition-timing-function:step(3);
+    transition-delay:1s; */
+    /* SHORTHAND FOR TRANSITION */
+    transition:all 2s ease-in 1s;
+
+    /* position:absolute;
+    top:50px;
+    left:100px; */
+    margin-top:200px;
+    margin-left:100px;
+
+    /* transform:rotate(45deg); */
+    /* rotate:x 90deg; */
+    /* rotate:y 90deg; */
+    /* rotate:z 90deg; */
+
+}
+#transitionsandtransform:hover{
+    background-color:red;
+    color:white;
+    font-size:20px;
+
+    /* transform:scale(2); */
+    /* transform:scale(0.5); */
+    transform:scalex(2);
+    /* transform:scaley(2); */
+
+    transform:translate(100px,200px);
+    /* transform:translateX(150px); */
+    /* transform:translateY(250px); */
+    
+    transform:skew(45deg);
+}
+#transitionsandtransform:active{
+    background-color:pink;
+
+}
+
+@keyframes coloranimation{
+    0% {
+        margin-left:0px;
+        background-color:yellow;
+    }
+    50%{
+        background-color:antiquewhite;
+    }
+    100% { 
+        margin-left:200px;
+        background-color:red;
+        color:white;
+    }
+
+     /* from{background-color:aquamarine;}
+    to{background-color: red;} */
+}
+
+
+#animation{
+    height:200px;
+    width:200px;
+    background-color:aquamarine;
+    border:2px solid black;
+    margin-top:100px;
+    margin-left:100px;
+
+    /* animation-name:coloranimation; */
+    /* animation-duration:2s; */
+    /* animation-timing-function:ease-in; */
+    /* animation-delay:1s; */
+    /* animation-iteration-count:3; */
+    /* animation-iteration-count:infinite; */
+    /* animation-direction:normal; */
+    /* animation-direction:reverse; */
+    /* animation-direction:alternate; */
+    /* animation-direction:alternate-reverse; */
+
+    /* SHORTHAND OF ANIMATION */
+    animation:coloranimation 2s linear 1s infinite normal;
+
+}
+
+#indentation{
+   text-indent:50px;
+   background-color:yellow;
+   /* padding-left:50px; */
+   text-shadow: 3cm;
+
+}

@@ -1,0 +1,296 @@
+*{
+    margin:0;
+    font-family:arial;
+    border:border-box;
+}
+.navbar{
+    height:60px;
+    background-color:#0F1111;
+    color:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.nav-logo{
+    height:50px;
+    width:100px;
+
+}
+.logo{
+    background-image:url("https://www.shutterstock.com/image-vector/chattogram-bangladesh-april-24-2023-260nw-2292992631.jpg");
+    height:50px;
+    width:100%;
+    background-size:cover;
+
+}
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border:1.5px solid white;
+}
+/* Box 2 */
+.add-icon{
+    display:flex;
+    align-items:center;
+}
+.add1{
+    color:#cccccc;
+    font-size:0.85rem;
+    margin-left:15px;
+
+}
+.add2{
+    font-size:1rem;
+    margin-left:3px;
+}
+/*Box 3*/
+.nav-search{
+    display:flex;
+    justify-content:space-evenly;
+    background-color:pink;
+    width:620px;
+    height:40px;
+    border-radius:4px;
+}
+.nav-search:hover{
+    border:4px solid orange;
+}
+.search-select{
+    background-color:#f3f3f3;
+    width:50px;
+    text-align:center;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    border:none;
+
+}
+.search-input{
+    width:100%;
+    font-size:1rem;
+    border:none;
+
+}
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 1.2rem;
+    background-color:#febd68;
+    color:#0f1111;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    
+}
+/*Box 4*/
+
+span{
+    font-size:0.7rem;
+}
+.nav-second{
+    font-size:0.85rem;
+    font-weight:700;
+}
+/*Box 5*/
+.nav-cart i{
+    font-size:30px;
+}
+.nav-cart{
+    font-size:0.85rem;
+    font-weight:700;
+}
+/* navbar 2 */
+
+.panel{
+    height:40px;
+    background-color:#222f3d;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    color:white;
+}
+.panel-ops p{
+    display:inline-block;
+    margin-left:20px;
+}
+.panel-ops{
+    width:80%;
+    font-size:0.85rem;
+}
+.pane-deals{
+    font-size:0.9rem;
+    font-weight:700;
+}
+
+/* Hero-section */
+.hero-section{
+    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/Toys/ToysFiesta2024GWJan/PC_hero-toyfiesta_toys-and-games_Unrec_1x._CB585407284_.jpg");
+    background-size:cover;
+    height:350px;
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.hero-msg{
+    background-color:white;
+    color:#000000;
+    height:40px;
+    width:95%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0.85rem;
+    margin-bottom:25px;
+    /* position:relative;
+    top:250px; */
+}
+.hero-msg a{
+    text-decoration:none;
+    color:#cccccc;
+}
+/* shop section */
+
+.shop-section{
+    display:flex;
+    flex-wrap:wrap;
+    /* direction:row; */
+    justify-content:space-evenly;
+    background-color:lightgray;
+}
+
+.box{
+    height:400px;
+    width:23%;
+    border:2px solid #000000;
+    background-color:white;
+    margin-top:15px;
+    
+}
+
+.box-content{
+    margin-top:1rem;
+    margin-left:1rem;
+    margin-right:rem;
+}
+.box-content p{
+    color:#cccccc;
+}
+.box-content p:hover{
+    color:red;  
+}
+
+.box-img1{
+    background-image:url("https://m.media-amazon.com/images/I/61Rp5k5HNFL._AC_UL480_FMwebp_QL65_.jpg");
+    background-size:cover;
+    height:300px;
+    margin:1rem; 
+}
+.box-img2{
+    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/BAU2023/BTFGW/HF_-_PCQC_-_Resized._SY232_CB595940621_.jpg");
+    background-size:cover;
+    height:200px;
+    margin:1rem;
+}
+.box-img3{
+    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-372-232._SY232_CB636110853_.jpg");
+    background-size:cover;
+    height:150px;
+    margin:1rem;
+}
+.box-img4{
+    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/Suma/MSO/Dec/DesktopQC/Christmas/2x_Desktop_Quad_card_w_title_-_Card_4._SY232_CB570558331_.jpg");
+    background-size:cover;
+    height:150px;
+    margin:1rem;
+}
+.box-img5{
+    background-image:url("https://m.media-amazon.com/images/I/71uB4BEEx-L._AC_SY400_.jpg");
+    background-size:cover;
+    height:300px;
+    margin:1rem;
+}
+.box-img6{
+    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/prime/JanART/GW/T1/PC_CC_2x_t1._SY608_CB585484972_.jpg");
+    background-size:cover;
+    height:200px;
+    margin:1rem;
+}
+.box-img7{
+    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_376x232_3._SY232_CB600489960_.jpg");
+    background-size:cover;
+    height:150px;
+    margin:1rem;
+}
+.box-img8{
+    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2024/GW_Jan/1st/Combo_high_res_2_1_1._SY608_CB587142581_.jpg");
+    background-size:cover;
+    height:200px;
+    margin:1rem;
+}
+
+/*footer*/
+footer{
+    margin-top:20px;
+}
+/*footer panel1*/
+.footer-panel1{
+    background-color:#37475a;
+    color:white;
+    height:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0.85rem;
+}
+/*footer panel2*/
+.footer-panel2{
+    background-color:#222f3d;
+    height:300px;
+    display:flex;
+    justify-content:space-evenly;
+    color:white;
+}
+ul{
+    margin-top:30px;
+}
+ul a{
+    display:block;
+    text-decoration:none;
+    color:#dddddd;
+    font-size:0.85rem;
+    margin-top:10px;
+}
+/*footer panel3*/
+.footer-panel3{
+    background-color:#222f3d;
+    color:white;
+    height:70px;
+    border-top:0.5px solid white; 
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+}
+/* .amazon-logo{
+    background-image:url("https://www.shutterstock.com/image-vector/chattogram-bangladesh-april-24-2023-260nw-2292992631.jpg");
+    height:50px;
+    width:100px;
+    background-size:cover;
+} */
+/*footer panel4*/
+.footer-panel4{
+    background-color:#131a22;
+    color:#dddddd;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70px;
+    font-size:0.7rem;
+}
+.footer-panel4 a{
+    color:#dddddd;
+    text-decoration:none;
+}
+.copyright{
+    margin-top:5px;
+}

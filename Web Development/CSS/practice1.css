@@ -1,0 +1,20 @@
+body{
+    background-color:aqua;
+}
+
+#div1{
+    background-color:blue;text-align:center;
+}
+
+.c1{
+    color:red;
+}
+.c2{
+    color:red;
+}
+.c3{
+    color:red;
+}
+button{
+    background-color:green;
+}

@@ -1,0 +1,1 @@
+This is a long string adding from 04_append.py

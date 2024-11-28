@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <h2>Generate Fibonacci Series</h2>
+    <p>Enter the number of Fibonacci numbers to generate.</p>
+    <input type="number" id="fibonaccicount">
+    <button onclick="generatefibonacci()">Generate</button>
+    <p id="fibonacciSeries"></p>
+
+    <script>
+        function generatefibonacci(){
+            let count=parseInt(document.getElementById("fibonaccicount").value);
+            let fibonacciseries=[0,1];
+
+            if(count<=0){
+                document.getElementById("fibonacciSeries").innerHTML="Please Enter a positive Number.";
+                return;
+            }
+            if(count == 1){
+                document.getElementById("fibonacciSeries").innerHTML="0";
+                return;
+            }
+            for(let i=2;i <count;i++){
+                let nextfibonacci=fibonacciseries[i-1]+fibonacciseries[i-2];
+                fibonacciseries.push(nextfibonacci);
+            }
+            document.getElementById("fibonacciSeries").innerHTML="Fibonacci Series:"+fibonacciseries.join(", ");
+
+        }
+    </script>
+</body>
+</html>

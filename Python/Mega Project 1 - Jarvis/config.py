@@ -1,0 +1,2 @@
+api_key="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",
+news_api = "5eb0a67cc19843a5ac055a4597d891de"

@@ -1,0 +1,28 @@
+#div1{
+    height:600px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#div2{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    border:2px solid yellowgreen;
+    border-top:5px solid black;
+
+    animation:animationspin 2s ease-in 0s infinite normal;
+
+}
+
+@keyframes animationspin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+
+}

@@ -1,0 +1,15 @@
+li=[1,8,7,2,21,15]
+li.sort()
+print(li)
+li.reverse()
+print(li)
+li.append(22)
+print(li)
+li.insert(3,9)   # 3 is index and 9 is value
+print(li)
+# value=li.pop(2)
+print(li.pop(2))
+print(li)
+# print(value)
+li.remove(21)
+print(li)

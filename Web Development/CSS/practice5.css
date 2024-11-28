@@ -1,0 +1,10 @@
+div{
+    height:200px;
+    width:300px;
+    background-image:url("https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aHRtbHxlbnwwfHwwfHx8MA%3D%3D");
+    background-size:cover;
+    position:fixed;
+    right:0;
+    bottom:0;
+
+}
