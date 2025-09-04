@@ -1,0 +1,60 @@
+<div class="container mt-4">
+    <article>
+        <header class="mb-4">
+            <div class="d-flex align-items-center mb-3">
+                <span class="me-3 fs-1">
+                    {{#if (eq blog.slug "python-learn")}}🐍{{/if}}
+                    {{#if (eq blog.slug "HTML-learn")}}🌐{{/if}}
+                    {{#if (eq blog.slug "CSS-learn")}}🎨{{/if}}
+                    {{#if (eq blog.slug "JS-learn")}}⚡{{/if}}
+                </span>
+                <h1 class="display-4 mb-0">{{blog.title}}</h1>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">🏠 Home</a></li>
+                    <li class="breadcrumb-item"><a href="/blog">📝 Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{blog.title}}</li>
+                </ol>
+            </nav>
+        </header>
+        
+        <div class="content">
+            <p class="lead">{{blog.content}}</p>
+            
+            <!-- You can expand this to include more detailed content -->
+            <div class="mt-4">
+                <h3>Getting Started</h3>
+                <p>This is where you would add more detailed content about {{blog.title}}.</p>
+                
+                {{#if (eq blog.slug "python-learn")}}
+                    <div class="alert alert-info">
+                        <strong>Tip:</strong> Python is great for beginners! Start with variables and basic syntax.
+                    </div>
+                {{/if}}
+                
+                {{#if (eq blog.slug "HTML-learn")}}
+                    <div class="alert alert-info">
+                        <strong>Tip:</strong> HTML is the backbone of web pages. Master the basic tags first!
+                    </div>
+                {{/if}}
+                
+                {{#if (eq blog.slug "CSS-learn")}}
+                    <div class="alert alert-info">
+                        <strong>Tip:</strong> CSS controls the appearance of HTML elements. Practice with flexbox and grid!
+                    </div>
+                {{/if}}
+                
+                {{#if (eq blog.slug "JS-learn")}}
+                    <div class="alert alert-info">
+                        <strong>Tip:</strong> JavaScript brings interactivity to your web pages. Start with DOM manipulation!
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+        
+        <footer class="mt-4">
+            <a href="/blog" class="btn btn-secondary">← Back to Blog</a>
+        </footer>
+    </article>
+</div>

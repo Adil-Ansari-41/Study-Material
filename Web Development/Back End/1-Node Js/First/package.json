@@ -1,0 +1,15 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "first package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adil",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^20.1.4",
+    "express": "^5.1.0"
+  }
+}

@@ -24,7 +24,10 @@ public class binary_search {
         int num[] = {2, 3, 4, 5, 6, 7, 8, 10, 12, 14};
         int key = 10;
 
-        System.out.println("index for " + key + " is : " + BinarySearch(num, key));
+        //System.out.println("index for " + key + " is : " + BinarySearch(num, key));
+        int index = BinarySearch(num, key);
+        System.out.println((index == -1)? "Invalid Key ":" Key Index:" + index);
+
 
 
     }

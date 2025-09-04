@@ -4,6 +4,9 @@ public class Method_overriding {
         
         Deer d = new Deer();
         d.eat();
+
+        Animal a1 = new Deer();
+        a1.eat();
     }
     
 }

@@ -1,0 +1,7 @@
+node_modules : npm inti 
+
+Exprss :  npm i express --save
+
+Nodemon : npm i -g nodemon
+
+Angular :npm install -g @angular/cli
